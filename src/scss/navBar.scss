@@ -1,0 +1,41 @@
+// @import './color.scss';
+@import './color';
+
+* {
+    box-sizing: border-box;
+}
+
+.navbarJR {
+    .logo {
+
+
+        #doe {
+            color: $jiangrenGreen;
+
+        }
+
+    }
+
+    // .navbar-toggler .navbar-toggler-icon {
+    //     background-color: red;
+    // }
+    .collapse .navbar-nav li {
+        a {
+            border: 2px solid transparent;
+            font-size: 14px;
+            ;
+
+            &:hover {
+
+                border-bottom: 2px solid $jiangrenGreen;
+            }
+        }
+
+
+
+    }
+
+
+
+
+}
