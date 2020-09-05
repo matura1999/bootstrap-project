@@ -1,5 +1,7 @@
 body {
   background-color: #F5F5F5;
+  background-image: url(../assets/main_bg.png);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -18,28 +20,54 @@ body {
 
 footer {
   flex: 1;
+  font-size: 13px;
+}
+footer a {
+  color: #2ECA7F;
 }
 
 .home {
   border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .home .cardTop {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   background-color: #2ECA7F;
+  background-image: url(../assets/sp_main_bg.png);
+  background-size: cover;
 }
 .home .cardTop .photo {
   width: 300px;
   height: 300px;
   position: relative;
   top: 30px;
+  transition: top ease 0.5s;
+}
+.home .cardTop .photo:hover {
+  top: 20px;
+}
+.home .cardTop h1 {
+  font-size: 60px;
+  font-weight: 700;
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+.home .cardTop .icons > a {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+  margin: 0 5px;
 }
 .home .cardBottom {
   height: 300px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
-.home .cardBottom .aboutMe .me {
+.home .cardBottom a,
+.home .cardBottom .me {
   color: #2ECA7F;
 }
 .home .cardBottom .info {

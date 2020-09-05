@@ -2,6 +2,8 @@
 
 body {
     background-color: #F5F5F5;
+    background-image: url(../assets/main_bg.png);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -32,4 +34,10 @@ body {
 
 footer {
     flex: 1;
+    font-size: 13px;
+    ;
+
+    a {
+        color: $jiangrenGreen;
+    }
 }
