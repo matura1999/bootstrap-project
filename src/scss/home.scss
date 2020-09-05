@@ -1,0 +1,35 @@
+.home {
+    border-radius: 15px;
+
+    .cardTop {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-color: $jiangrenGreen;
+
+        .photo {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            top: 30px;
+        }
+    }
+
+    .cardBottom {
+        height: 300px;
+        // border: 17px solid white;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+
+        // border-radius: 15px;
+        .aboutMe {
+            .me {
+                color: $jiangrenGreen;
+            }
+        }
+
+        .info {
+            font-size: 15px;
+
+        }
+    }
+}

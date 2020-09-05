@@ -22,7 +22,7 @@
     <!-- this is the nav bar and section page  -->
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light navbarJR">
+            <nav class="navbar navbar-expand-lg navbar-light  navbarJR">
                 <div class="navbar-brand logo">John <span id="doe">Doe</span></div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -58,12 +58,40 @@
 
     <!-- main for the card  -->
     <main>
+        <div class="home container">
+            <div class="cardTop row ">
+                <div class="photoContainer col-md-6 d-flex justify-content-center align-self-center">
+                    <img src="./assets/photo.png" class="photo img-thumbnail" alt="photo">
+                </div>
+
+                <div class="title col-md-6 d-flex flex-column justify-content-center mt-5 mt-md-0 mt-lg-0 mt-xl-0">
+                    <h1 class="text-center text-white ">John Doe</h1>
+                    <p class="text-center text-white">Frontend-developer</p>
+                </div>
+            </div>
+
+            <div class="cardBottom row ">
+                <div class="aboutMe col-md-6 d-flex flex-column justify-content-center">
+                    <h3>About <span class="me">Me</span> </h3>
+                    Hello! I’m John Doe. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum
+                    ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.
+                </div>
+                <div class="info col-md-6 row ml-0 d-flex align-content-center ">
+                    <div class="attribute col-4 ">Age <br>Residence <br>Address <br> e-mail <br> Phone </div>
+                    <div class="value col-8 ">29 <br> Australia <br> Level 3 / 57 Coronation Drive, Brisbane
+                        <br>
+                        <a href="mailto:info@jiangren.com.au">info@jiangren.com.au</a><br> +0123 123 456 789</div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
     <!-- copyright footer  -->
-    <footer>
-
+    <footer class="text-center d-flex flex-column justify-content-end ">
+        <div class="copyright mb-3">
+            © 2017 All rights reserved. Designed by <a href="https://jiangren.com.au/" class="website">Jiangren</a>
+        </div>
     </footer>
 
 
