@@ -7,6 +7,9 @@ body {
   height: 100vh;
 }
 
+.navbarJR {
+  height: 90px;
+}
 .navbarJR .logo #doe {
   color: #2ECA7F;
 }
