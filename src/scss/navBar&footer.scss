@@ -1,0 +1,45 @@
+@import './color';
+
+body {
+    background-color: #F5F5F5;
+    background-image: url(../assets/main_bg.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbarJR {
+    height: 90px;
+
+    .logo {
+        #doe {
+            color: $jiangrenGreen;
+        }
+    }
+
+    .collapse .navbar-nav li {
+        a {
+            border: 2px solid transparent;
+            font-size: 14px;
+            ;
+
+            &:hover {
+
+                border-bottom: 2px solid $jiangrenGreen;
+            }
+        }
+    }
+}
+
+
+
+footer {
+    flex: 1;
+    font-size: 13px;
+    ;
+
+    a {
+        color: $jiangrenGreen;
+    }
+}
