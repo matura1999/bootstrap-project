@@ -1,0 +1,297 @@
+@import "./color";
+
+.resume {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 80px;
+    font-family: 'Roboto', Helvetica, sans-serif;
+
+    &__title {
+        height: 126px;
+        color: white;
+        font-weight: 600;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        background-color: $jiangrenGreen;
+        background-image: url(../assets/sp_main_bg.png);
+        background-size: cover;
+    }
+
+    &__cardTop {
+        .education {
+            h3 {
+                font-size: 21px;
+                padding: 20px 30px;
+                font-weight: bold;
+            }
+
+            .edu_cardlist {
+                margin-left: 30px;
+                border-left: 1px solid #9e9e9e;
+
+                &__card1,
+                &__card2,
+                &__card3 {
+                    margin: 10px 20px;
+                    margin-right: 0;
+                    border: 1px solid #d8d4d4;
+                    border-left: 2px solid $jiangrenGreen;
+                    padding: 10px;
+                    position: relative;
+                    ;
+
+                    .edu-card__title {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
+                    .edu-card__year {
+                        color: $jiangrenGreen;
+                        font-size: 12px;
+                        padding-right: 5px;
+                        border-right: 1px solid #d8d4d4;
+                    }
+
+                    .edu-card__apple {
+                        color: #9e9e9e;
+                        font-size: 12px;
+                    }
+
+                    .edu-card__intro {
+                        font-size: 15px;
+
+                    }
+
+                    &:before {
+                        content: '';
+                        width: 18px;
+                        border: 1px solid $jiangrenGreen;
+                        display: block;
+                        position: absolute;
+                        left: -20px;
+                        top: 19.5px;
+                    }
+
+                    &:after {
+                        content: '';
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        border: 2px solid $jiangrenGreen;
+                        display: block;
+                        background-color: white;
+                        position: absolute;
+                        left: -27px;
+                        top: 16px;
+                    }
+
+                    &:hover {
+                        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+                    }
+                }
+            }
+        }
+
+        .experience {
+            h3 {
+                font-size: 21px;
+                padding: 20px 30px;
+                font-weight: bold;
+            }
+
+            .exp_cardlist {
+                margin-left: 30px;
+                border-left: 1px solid #9e9e9e;
+
+                &__card1,
+                &__card2,
+                &__card3 {
+                    margin: 10px 20px;
+                    margin-right: 0;
+                    border: 1px solid #d8d4d4;
+                    border-left: 2px solid $jiangrenGreen;
+                    padding: 10px;
+                    position: relative;
+                    ;
+
+                    .exp-card__title {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
+                    .exp-card__year {
+                        color: $jiangrenGreen;
+                        font-size: 12px;
+                        padding-right: 5px;
+                        border-right: 1px solid #d8d4d4;
+                    }
+
+                    .exp-card__apple {
+                        color: #9e9e9e;
+                        font-size: 12px;
+                    }
+
+                    .exp-card__intro {
+                        font-size: 15px;
+
+                    }
+
+                    &:before {
+                        content: '';
+                        width: 18px;
+                        border: 1px solid $jiangrenGreen;
+                        display: block;
+                        position: absolute;
+                        left: -20px;
+                        top: 19.5px;
+                    }
+
+                    &:after {
+                        content: '';
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        border: 2px solid $jiangrenGreen;
+                        display: block;
+                        background-color: white;
+                        position: absolute;
+                        left: -27px;
+                        top: 16px;
+                    }
+
+                    &:hover {
+                        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+    &__cardbottom {
+
+        font-weight: 600;
+        padding-bottom: 30px;
+
+        .designSkills {
+            h3 {
+                font-size: 21px;
+                font-weight: 600;
+                padding: 30px 30px;
+                padding-bottom: 5px;
+
+                span {
+                    color: $jiangrenGreen;
+                }
+            }
+
+
+
+            .webDesign,
+            .graphicDesign,
+            .printDesign {
+                font-size: 12px;
+                padding-left: 30px;
+
+                .bar {
+                    padding: 0 15px;
+                    margin-bottom: 10px;
+
+                    &--green {
+                        width: 80%;
+                        height: 12px;
+                        border: 1px solid #9e9e9e;
+                        background-color: $jiangrenGreen;
+                    }
+
+                    &--gray {
+                        width: 20%;
+                        height: 12px;
+                        border: 1px solid #9e9e9e;
+                        border-left: 0;
+                        background-color: #d8d4d4;
+                    }
+                }
+
+            }
+
+            .graphicDesign .bar--green {
+                width: 50%;
+            }
+
+            .graphicDesign .bar--gray {
+                width: 50%;
+            }
+
+            .printDesign .bar--green {
+                width: 30%;
+            }
+
+            .printDesign .bar--gray {
+                width: 70%;
+            }
+        }
+
+
+        .codingSkills {
+            h3 {
+                font-size: 21px;
+                font-weight: 600;
+                padding: 30px 30px;
+                padding-bottom: 5px;
+
+                span {
+                    color: $jiangrenGreen;
+                }
+            }
+
+
+
+            .HTML5,
+            .CSS,
+            .jQuery {
+                font-size: 12px;
+                padding-left: 30px;
+
+                .bar {
+                    padding: 0 15px;
+                    margin-bottom: 10px;
+
+                    &--green {
+                        width: 80%;
+                        height: 12px;
+                        border: 1px solid #9e9e9e;
+                        background-color: $jiangrenGreen;
+                    }
+
+                    &--gray {
+                        width: 20%;
+                        height: 12px;
+                        border: 1px solid #9e9e9e;
+                        border-left: 0;
+                        background-color: #d8d4d4;
+                    }
+                }
+
+            }
+
+            .CSS .bar--green {
+                width: 50%;
+            }
+
+            .CSS .bar--gray {
+                width: 50%;
+            }
+
+            .jQuery .bar--green {
+                width: 70%;
+            }
+
+            .jQuery .bar--gray {
+                width: 30%;
+            }
+        }
+    }
+}
