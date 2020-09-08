@@ -9,29 +9,89 @@ body {
     height: 100vh;
 }
 
-.navbarJR {
-    height: 90px;
+
+
+header {
+    // display: float;
+    margin-bottom: 20px;
+    // position: fixed;
+    // position: fixed;
+    // top: 0;
+}
+
+.navbar {
+    height: 70px;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    // position: fixed;
+    // top: 0;
 
     &__logo {
+        font-size: 20px;
+        margin-left: 5%;
+
         #doe {
             color: $jiangrenGreen;
         }
     }
 
-    .collapse .navbar-nav li {
+    &__sections {
+        margin-right: 5%;
+
+
         a {
-            border: 2px solid transparent;
-            font-size: 14px;
-            ;
+            color: #9e9e9e;
+            display: inline-block;
+            box-sizing: border-box;
+            margin-left: 25px;
+            position: relative;
+            text-decoration: none;
+
 
             &:hover {
-                border-bottom: 2px solid $jiangrenGreen;
+                &:after {
+                    display: block;
+                    position: absolute;
+                    content: '';
+                    width: 50%;
+                    height: 2px;
+                    margin: 0 25%;
+                    background-color: #2eca7f;
+                }
             }
         }
     }
+
+    &__icon {
+        border: none;
+        background-color: transparent;
+        display: none;
+
+    }
 }
 
+@media screen and (max-width: 767px) {
 
+    .navbar {
+        background-color: $jiangrenGreen !important;
+
+        &__logo {
+            color: white;
+
+            #doe {
+                color: white;
+            }
+        }
+
+        &__sections {
+            display: none;
+        }
+
+        &__icon {
+            display: block;
+            color: white;
+        }
+    }
+}
 
 footer {
     flex: 1;
@@ -40,5 +100,41 @@ footer {
 
     a {
         color: $jiangrenGreen;
+
+    }
+}
+
+
+.sidepanel {
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 70px;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-color: $jiangrenGreen;
+
+    a {
+        padding: 8px 0;
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        display: block;
+
+        &:hover {
+            &::after {
+                position: absolute;
+                content: '';
+                left: 87.5px;
+                margin-top: 20px;
+                width: 25px;
+                height: 0;
+                // color: white;
+                border: 1px solid white;
+            }
+        }
     }
 }

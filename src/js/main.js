@@ -71,3 +71,36 @@ window.onload = function () {
     // add listener to nav button
     addListenerForNavButton();
 }
+
+function switchNavbarAndSidebar() {
+    let x = document.querySelector("#sections");
+    if (x.className === "navbar__sections") {
+        x.className = "sidepanel";
+        // x.display = 'block';
+    } else {
+        x.className = "navbar__sections";
+    }
+}
+
+// if the window size becomes large again, switch side bar to navbar
+window.addEventListener('resize', function (event) {
+    if (window.innerWidth > 767) {
+        document.querySelector("#sections").className = "navbar__sections";
+    }
+});
+
+
+window.onscroll = function () {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (window.innerWidth > 767) {
+        if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+            document.querySelector(".navbar").style.backgroundColor = "white";
+        } else {
+            document.querySelector(".navbar").style.backgroundColor = "transparent";
+
+        }
+    }
+}

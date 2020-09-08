@@ -1,0 +1,36 @@
+/* @media screen and (max-width: 768px) {
+    .navbar-side .side-collapse {
+        top: 50px;
+        bottom: 0;
+        right: 0;
+        width: 206px;
+        position: fixed;
+        overflow: auto;
+        z-index: 10;
+
+        transition: all 0.3s cubic-bezier(.87, -.41, .19, 1.44);
+    }
+
+    .navbar-side .side-collapse.open {
+        width: 0;
+    }
+} */
+
+/* 
+@media screen and (max-width: 768px) {
+    .navbar-side .side-collapse {
+        top: 50px;
+        bottom: 0;
+        right: 0;
+        width: 206px;
+        position: fixed;
+        overflow: auto;
+        z-index: 10;
+
+        transition: all 0.3s cubic-bezier(.87, -.41, .19, 1.44);
+    }
+
+    .navbar-side .side-collapse.open {
+        width: 0;
+    }
+} */

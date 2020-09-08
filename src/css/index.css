@@ -7,20 +7,65 @@ body {
   height: 100vh;
 }
 
-.navbarJR {
-  height: 90px;
-}
-.navbarJR__logo #doe {
-  color: #2ECA7F;
-}
-.navbarJR .collapse .navbar-nav li a {
-  border: 2px solid transparent;
-  font-size: 14px;
-}
-.navbarJR .collapse .navbar-nav li a:hover {
-  border-bottom: 2px solid #2ECA7F;
+header {
+  margin-bottom: 20px;
 }
 
+.navbar {
+  height: 70px;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+.navbar__logo {
+  font-size: 20px;
+  margin-left: 5%;
+}
+.navbar__logo #doe {
+  color: #2ECA7F;
+}
+.navbar__sections {
+  margin-right: 5%;
+}
+.navbar__sections a {
+  color: #9e9e9e;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: 25px;
+  position: relative;
+  text-decoration: none;
+}
+.navbar__sections a:hover:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 2px;
+  margin: 0 25%;
+  background-color: #2eca7f;
+}
+.navbar__icon {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    background-color: #2ECA7F !important;
+  }
+  .navbar__logo {
+    color: white;
+  }
+  .navbar__logo #doe {
+    color: white;
+  }
+  .navbar__sections {
+    display: none;
+  }
+  .navbar__icon {
+    display: block;
+    color: white;
+  }
+}
 footer {
   flex: 1;
   font-size: 13px;
@@ -29,9 +74,39 @@ footer a {
   color: #2ECA7F;
 }
 
+.sidepanel {
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 70px;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  background-color: #2ECA7F;
+}
+.sidepanel a {
+  padding: 8px 0;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  display: block;
+}
+.sidepanel a:hover::after {
+  position: absolute;
+  content: "";
+  left: 87.5px;
+  margin-top: 20px;
+  width: 25px;
+  height: 0;
+  border: 1px solid white;
+}
+
 .home {
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 80px;
 }
 .home__cardTop {
   border-top-right-radius: 15px;
