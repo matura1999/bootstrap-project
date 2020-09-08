@@ -12,7 +12,7 @@ body {
 .navbarJR {
     height: 90px;
 
-    .logo {
+    &__logo {
         #doe {
             color: $jiangrenGreen;
         }
@@ -25,7 +25,6 @@ body {
             ;
 
             &:hover {
-
                 border-bottom: 2px solid $jiangrenGreen;
             }
         }

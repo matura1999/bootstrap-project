@@ -2,13 +2,12 @@
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    .cardTop {
+    &__cardTop {
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
         background-color: $jiangrenGreen;
         background-image: url(../assets/sp_main_bg.png);
         background-size: cover;
-
 
         .photo {
             width: 300px;
@@ -22,45 +21,37 @@
             }
         }
 
-        h1 {
-            font-size: 60px;
-            font-weight: 700;
-            font-family: 'Roboto', Helvetica, sans-serif;
+        .title {
+            h1 {
+                font-size: 60px;
+                font-weight: 700;
+                font-family: 'Roboto', Helvetica, sans-serif;
+            }
 
-        }
-
-        .icons>a {
-            // color: gray;
-            width: 24px;
-            height: 24px;
-            border-radius: 24px;
-            display: inline-block;
-            text-align: center;
-            // box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
-            background-color: white;
-            margin: 0 5px;
-
-
-
+            .icons>a {
+                width: 24px;
+                height: 24px;
+                border-radius: 24px;
+                display: inline-block;
+                text-align: center;
+                background-color: white;
+                margin: 0 5px;
+            }
         }
     }
 
-    .cardBottom {
+    &__cardBottom {
         height: 300px;
-        // border: 17px solid white;
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
 
         a,
-        .me {
+        #me {
             color: $jiangrenGreen;
         }
 
-
         .info {
             font-size: 15px;
-
         }
-
     }
 }

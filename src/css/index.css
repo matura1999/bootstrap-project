@@ -10,7 +10,7 @@ body {
 .navbarJR {
   height: 90px;
 }
-.navbarJR .logo #doe {
+.navbarJR__logo #doe {
   color: #2ECA7F;
 }
 .navbarJR .collapse .navbar-nav li a {
@@ -33,29 +33,29 @@ footer a {
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.home .cardTop {
+.home__cardTop {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   background-color: #2ECA7F;
   background-image: url(../assets/sp_main_bg.png);
   background-size: cover;
 }
-.home .cardTop .photo {
+.home__cardTop .photo {
   width: 300px;
   height: 300px;
   position: relative;
   top: 30px;
   transition: top ease 0.5s;
 }
-.home .cardTop .photo:hover {
+.home__cardTop .photo:hover {
   top: 20px;
 }
-.home .cardTop h1 {
+.home__cardTop .title h1 {
   font-size: 60px;
   font-weight: 700;
   font-family: "Roboto", Helvetica, sans-serif;
 }
-.home .cardTop .icons > a {
+.home__cardTop .title .icons > a {
   width: 24px;
   height: 24px;
   border-radius: 24px;
@@ -64,16 +64,16 @@ footer a {
   background-color: white;
   margin: 0 5px;
 }
-.home .cardBottom {
+.home__cardBottom {
   height: 300px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
 }
-.home .cardBottom a,
-.home .cardBottom .me {
+.home__cardBottom a,
+.home__cardBottom #me {
   color: #2ECA7F;
 }
-.home .cardBottom .info {
+.home__cardBottom .info {
   font-size: 15px;
 }
 

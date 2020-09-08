@@ -22,8 +22,8 @@
     <!-- this is the nav bar and section page  -->
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light  navbarJR">
-                <div class="navbar-brand logo">John <span id="doe">Doe</span></div>
+            <nav class="navbarJR navbar navbar-expand-lg navbar-light">
+                <div class="navbarJR__logo navbar-brand">John <span id="doe">Doe</span></div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -49,8 +49,6 @@
                             <a class="nav-link text-muted" href="#contact">Contact</a>
                         </li>
                     </ul>
-
-
                 </div>
             </nav>
         </div>
@@ -59,7 +57,7 @@
     <!-- main for the card  -->
     <main>
         <section class="home container" data-page="#home">
-            <div class="cardTop row ">
+            <div class="home__cardTop row ">
                 <div class="photoContainer col-md-6 d-flex justify-content-center align-self-center">
                     <img src="./assets/photo.png" class="photo img-thumbnail" alt="photo">
                 </div>
@@ -71,16 +69,13 @@
                         <a href="#twitter"><i class="fab fa-twitter text-muted "></i></a>
                         <a href="#facebook"><i class="fab fa-facebook text-muted "></i></a>
                         <a href="#ins"><i class="fab fa-instagram text-muted "></i></a>
-
-
-
                     </div>
                 </div>
             </div>
 
-            <div class="cardBottom row bg-white">
+            <div class="home__cardBottom row bg-white">
                 <div class="aboutMe col-md-6 d-flex flex-column justify-content-center pl-5">
-                    <h3>About <span class="me">Me</span> </h3>
+                    <h3>About <span id="me">Me</span> </h3>
                     Hello! I’m John Doe. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum
                     ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.
                 </div>
@@ -97,7 +92,7 @@
 
 
         <section class="resume" data-page="#resume">
-            <div class="box">section2</div>
+            section2
 
         </section>
     </main>
