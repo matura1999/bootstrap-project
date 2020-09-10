@@ -156,6 +156,7 @@ footer a {
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-top: 80px;
+  margin-bottom: 100px;
   font-family: "Roboto", Helvetica, sans-serif;
 }
 .resume__title {
@@ -387,6 +388,67 @@ footer a {
 }
 .resume__cardbottom .codingSkills .jQuery .bar--gray {
   width: 30%;
+}
+
+.service {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 80px;
+  margin-bottom: 100px;
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+.service .myServices__title {
+  font-size: 21px;
+  padding: 20px 30px;
+  font-weight: bold;
+}
+.service .myServices__title .service-text {
+  color: #2ECA7F;
+}
+.service .myServices .serviceCards {
+  position: relative;
+}
+.service .myServices .serviceCards .image-container {
+  width: 120px;
+  height: 120px;
+  background-color: #f1efef;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+}
+.service .myServices .serviceCards .image-container img {
+  height: 64px;
+  margin: 26px;
+}
+.service .myServices .serviceCards h5 {
+  padding-top: 15px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.service .myServices .serviceCards p {
+  margin: 5px 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.service .clients {
+  padding-bottom: 80px;
+}
+.service .clients__title {
+  font-size: 21px;
+  padding: 20px 30px;
+  font-weight: bold;
+}
+.service .clients .clientList {
+  width: 90%;
+  align-self: center;
+}
+.service .clients .clientList__client {
+  display: flex;
+  justify-content: center;
+}
+.service .clients .clientList__client img {
+  height: 80px;
+  width: 80px;
 }
 
 /*# sourceMappingURL=index.css.map */
