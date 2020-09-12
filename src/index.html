@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"> -->
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/55c7160121.js" crossorigin="anonymous"></script>
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <!-- this is the nav bar and section page  -->
+    <nav class="navbar container-fluid fixed-top">
+        <div class="navbar__logo">John <span id="doe">Doe</span></div>
+        <div class="navbar__sections" id="sections">
+
+            <a href="#home">Home </a>
+            <a href="#resume">Resume</a>
+            <a href="#service">Service</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+        <button class="navbar__icon" onclick="switchNavbarAndSidebar()">
+            <i class="fa fa-bars"></i>
+        </button>
+    </nav>
+    </header>
+
+    <!-- main for the card  -->
+    <main>
+        <section class="home container" data-page="#home">
+            <div class="home__cardTop row ">
+                <div class="photoContainer col-md-6 d-flex justify-content-center align-self-center">
+                    <img src="./assets/photo.png" class="photo img-thumbnail" alt="photo">
+                </div>
+
+                <div class="title col-md-6 d-flex flex-column justify-content-center m-5 m-md-0 m-lg-0 m-xl-0">
+                    <h1 class="text-center text-white ">John Doe</h1>
+                    <p class="text-center text-white">Frontend-developer</p>
+                    <div class="text-center icons">
+                        <a href="#twitter"><i class="fab fa-twitter text-muted "></i></a>
+                        <a href="#facebook"><i class="fab fa-facebook text-muted "></i></a>
+                        <a href="#ins"><i class="fab fa-instagram text-muted "></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home__cardBottom row bg-white">
+                <div class="aboutMe col-md-6 d-flex flex-column justify-content-center pl-5">
+                    <h3>About <span id="me">Me</span> </h3>
+                    Hello! I’m John Doe. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum
+                    ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, condimentum nec ultricies.
+                </div>
+                <div class="info col-md-6 row ml-0 d-flex align-content-center pl-4">
+                    <div class="attribute col-4 pl-5 ">Age <br>Residence <br>Address <br> e-mail <br> Phone
+                    </div>
+                    <div class="value col-8 text-muted">29 <br> Australia <br> Level 3 / 57 Coronation Drive,
+                        Brisbane
+                        <br>
+                        <a href="mailto:info@jiangren.com.au">info@jiangren.com.au</a><br> +0123 123 456 789</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="resume container" data-page="#resume">
+            <h1 class="resume__title row d-flex justify-content-center align-content-center">Resume</h1>
+            <div class="resume__cardTop d-flex row">
+                <div class="education col-md-6 ">
+                    <h3>Education</h3>
+                    <div class="edu_cardlist d-flex flex-column">
+                        <div class="edu_cardlist__card1">
+                            <span class="edu-card__title">Specialization Course</span>
+                            <br>
+                            <span class="edu-card__year">2010</span>
+                            <span class="edu-card__apple">Apple Inc.</span>
+                            <br>
+                            <span class="edu-card__intro">Mauris magna sapien, pharetra consectetur fringilla vitae,
+                                interdum sed tortor.</span>
+                        </div>
+                        <div class="edu_cardlist__card2">
+                            <span class="edu-card__title">Specialization Course</span>
+                            <br>
+                            <span class="edu-card__year">2010</span>
+                            <span class="edu-card__apple">Apple Inc.</span>
+                            <br>
+                            <span class="edu-card__intro">Mauris magna sapien, pharetra consectetur fringilla vitae,
+                                interdum sed tortor.</span>
+                        </div>
+                        <div class="edu_cardlist__card3">
+                            <span class="edu-card__title">Specialization Course</span>
+                            <br>
+                            <span class="edu-card__year">2010</span>
+                            <span class="edu-card__apple">Apple Inc.</span>
+                            <br>
+                            <span class="edu-card__intro">Mauris magna sapien, pharetra consectetur fringilla vitae,
+                                interdum sed tortor.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience col-md-6 bg ">
+                    <h3>Experience</h3>
+                    <div class="exp_cardlist d-flex flex-column">
+                        <div class="exp_cardlist__card1">
+                            <span class="exp-card__title">Frontend-developer</span>
+                            <br>
+                            <span class="exp-card__year">Dec 2012 - Current</span>
+                            <span class="exp-card__apple">Web Agency</span>
+                            <br>
+                            <span class="exp-card__intro">Mauris magna sapien, pharetra consectetur fringilla vitae,
+                                interdum sed tortor.
+
+                            </span>
+
+                        </div>
+                        <div class="exp_cardlist__card2">
+                            <span class="exp-card__title">Frontend-developer</span>
+                            <br>
+                            <span class="exp-card__year">Dec 2012 - Current</span>
+                            <span class="exp-card__apple">Web Agency</span>
+                            <br>
+                            <span class="exp-card__intro">Mauris magna sapien, pharetra consectetur fringilla vitae,
+                                interdum sed tortor.
+
+                            </span>
+                        </div>
+                        <div class="exp_cardlist__card1">
+                            <span class="exp-card__title">Frontend-developer</span>
+                            <br>
+                            <span class="exp-card__year">Dec 2012 - Current</span>
+                            <span class="exp-card__apple">Web Agency</span>
+                            <br>
+                            <span class="exp-card__intro">Mauris magna sapien, pharetra consectetur fringilla vitae,
+                                interdum sed tortor.
+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="resume__cardbottom d-flex row">
+                <div class="designSkills col-md-6 ">
+                    <h3>Design <span>Skills</span> </h3>
+                    <div class="webDesign">
+                        Web Design <br>
+                        <div class="bar row">
+                            <div class="bar--green"></div>
+                            <div class="bar--gray"></div>
+                        </div>
+                    </div>
+                    <div class="graphicDesign">
+                        Graphic Design <br>
+                        <div class="bar row">
+                            <div class="bar--green"></div>
+                            <div class="bar--gray"></div>
+                        </div>
+                    </div>
+                    <div class="printDesign">
+                        Print Design <br>
+                        <div class="bar row">
+                            <div class="bar--green"></div>
+                            <div class="bar--gray"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="codingSkills col-md-6 ">
+                    <h3>Coding <span>Skills</span> </h3>
+                    <div class="HTML5">
+                        HTML5 <br>
+                        <div class="bar row">
+                            <div class="bar--green"></div>
+                            <div class="bar--gray"></div>
+                        </div>
+                    </div>
+                    <div class="CSS">
+                        CSS3/LESS/SASS <br>
+                        <div class="bar row">
+                            <div class="bar--green"></div>
+                            <div class="bar--gray"></div>
+                        </div>
+                    </div>
+                    <div class="jQuery">
+                        jQuery <br>
+                        <div class="bar row">
+                            <div class="bar--green"></div>
+                            <div class="bar--gray"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section class="service container" data-page="#service">
+            <h1 class="resume__title row d-flex justify-content-center align-content-center">Services</h1>
+
+            <div class="myServices row d-flex flex-column">
+                <h3 class="myServices__title">My <span class="service-text">Services</span></h3>
+
+                <div class="serviceCards row">
+
+                    <div class="serviceCards__webDesign col-md-3 col-sm-6 d-flex flex-column">
+                        <div class="image-container align-self-center">
+                            <img src="./assets/service/web_design_icon.png" alt="web_design">
+
+                        </div>
+                        <div class="cardBody">
+                            <h5 class="mt-0 text-center">Web Design</h5>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor.</p>
+                        </div>
+                    </div>
+
+                    <div class="serviceCards__management col-md-3 col-sm-6 d-flex flex-column">
+                        <div class="image-container align-self-center">
+                            <img src="./assets/service/photography_icon.png" alt="web_design">
+                        </div>
+
+                        <div class="cardBody">
+                            <h5 class="mt-0 text-center">Photography</h5>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor.</p>
+                        </div>
+                    </div>
+                    <div class="serviceCards__photography col-md-3 col-sm-6 d-flex flex-column">
+                        <div class="image-container align-self-center">
+                            <img src="./assets/service/creativity_icon.png" alt="web_design">
+                        </div>
+
+                        <div class="cardBody ">
+                            <h5 class="mt-0 text-center">Management</h5>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor.</p>
+                        </div>
+                    </div>
+                    <div class="serviceCards__advertising col-md-3 col-sm-6 d-flex flex-column">
+                        <div class="image-container align-self-center ">
+                            <img src="./assets/service/advertising_icon.png" alt="web_design">
+                        </div>
+                        <div class="cardBody ">
+                            <h5 class="mt-0 text-center">Advertising</h5>
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="clients row d-flex flex-column ">
+                <div class="clients__title">Clients</div>
+
+                <div class="clientList row">
+
+                    <div class="clientList__client col-md-2 col-sm-4">
+                        <img src="./assets/service/client_1.png" class="align-self-center mr-3" alt="web_design">
+                    </div>
+                    <div class="clientList__client col-md-2 col-sm-4">
+                        <img src="./assets/service/client_1.png" class="align-self-center mr-3" alt="web_design">
+                    </div>
+                    <div class="clientList__client col-md-2 col-sm-4">
+                        <img src="./assets/service/client_1.png" class="align-self-center mr-3" alt="web_design">
+                    </div>
+                    <div class="clientList__client col-md-2 col-sm-4">
+                        <img src="./assets/service/client_1.png" class="align-self-center mr-3" alt="web_design">
+                    </div>
+                    <div class="clientList__client col-md-2 col-sm-4">
+                        <img src="./assets/service/client_1.png" class="align-self-center mr-3" alt="web_design">
+                    </div>
+                    <div class="clientList__client col-md-2 col-sm-4">
+                        <img src="./assets/service/client_1.png" class="align-self-center mr-3" alt="web_design">
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="blog container" data-page="#blog">
+            <h1 class="resume__title row d-flex justify-content-center align-content-center">Blog</h1>
+            <div class="blogList row ">
+                <div class="blogList__blogCard col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="cardContainer">
+                        <div class="cardContainer__top">
+                            <a href="#blogPage"><img src="./assets/blog_post_1_full.jpg" alt="blogImg"></a>
+                            <div class="date d-flex flex-column justify-content-center align-items-center">
+                                <span class="day">6</span>
+                                <span class="month">Dec</span>
+                            </div>
+                        </div>
+                        <div class="cardContainer__bottom d-flex flex-column justify-content-center align-items-center">
+                            <h5>Travel</h5>
+                            <a href="blogPage">Bootstrap is the Most Popular Framework</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blogList__blogCard col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="cardContainer">
+                        <div class="cardContainer__top">
+                            <a href="#blogPage"><img src="./assets/blog_post_1_full.jpg" alt="blogImg"></a>
+                            <div class="date d-flex flex-column justify-content-center align-items-center">
+                                <span class="day">6</span>
+                                <span class="month">Dec</span>
+                            </div>
+                        </div>
+                        <div class="cardContainer__bottom d-flex flex-column justify-content-center align-items-center">
+                            <h5>Travel</h5>
+                            <a href="blogPage">Bootstrap is the Most Popular Framework</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blogList__blogCard col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="cardContainer">
+                        <div class="cardContainer__top">
+                            <a href="#blogPage"><img src="./assets/blog_post_1_full.jpg" alt="blogImg"></a>
+                            <div class="date d-flex flex-column justify-content-center align-items-center">
+                                <span class="day">6</span>
+                                <span class="month">Dec</span>
+                            </div>
+                        </div>
+                        <div class="cardContainer__bottom d-flex flex-column justify-content-center align-items-center">
+                            <h5>Travel</h5>
+                            <a href="blogPage">Bootstrap is the Most Popular Framework</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blogList__blogCard col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="cardContainer">
+                        <div class="cardContainer__top">
+                            <a href="#blogPage"><img src="./assets/blog_post_1_full.jpg" alt="blogImg"></a>
+                            <div class="date d-flex flex-column justify-content-center align-items-center">
+                                <span class="day">6</span>
+                                <span class="month">Dec</span>
+                            </div>
+                        </div>
+                        <div class="cardContainer__bottom d-flex flex-column justify-content-center align-items-center">
+                            <h5>Travel</h5>
+                            <a href="blogPage">Bootstrap is the Most Popular Framework</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blogList__blogCard col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="cardContainer">
+                        <div class="cardContainer__top">
+                            <a href="#blogPage"><img src="./assets/blog_post_1_full.jpg" alt="blogImg"></a>
+                            <div class="date d-flex flex-column justify-content-center align-items-center">
+                                <span class="day">6</span>
+                                <span class="month">Dec</span>
+                            </div>
+                        </div>
+                        <div class="cardContainer__bottom d-flex flex-column justify-content-center align-items-center">
+                            <h5>Travel</h5>
+                            <a href="blogPage">Bootstrap is the Most Popular Framework</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blogList__blogCard col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="cardContainer">
+                        <div class="cardContainer__top">
+                            <a href="#blogPage"><img src="./assets/blog_post_1_full.jpg" alt="blogImg"></a>
+                            <div class="date d-flex flex-column justify-content-center align-items-center">
+                                <span class="day">6</span>
+                                <span class="month">Dec</span>
+                            </div>
+                        </div>
+                        <div class="cardContainer__bottom d-flex flex-column justify-content-center align-items-center">
+                            <h5>Travel</h5>
+                            <a href="blogPage">Bootstrap is the Most Popular Framework</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <!-- copyright footer  -->
+    <footer class="text-center d-flex flex-column justify-content-end ">
+        <div class="copyright mb-3 text-muted">
+            © 2017 All rights reserved. Designed by <a href="https://jiangren.com.au/" class="website">Jiangren</a>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="lib/js/bootstrap.js"></script>
+</body>
+
+</html>
