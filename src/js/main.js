@@ -3,6 +3,7 @@
 let homePage;
 let resumePage;
 let servicePage;
+let blogPage;
 let allPages;
 let pageTargetMap;
 
@@ -11,11 +12,13 @@ function initAllSections() {
   homePage = document.querySelector('main > section[data-page="#home"]');
   resumePage = document.querySelector('main > section[data-page="#resume"]');
   servicePage = document.querySelector('main > section[data-page="#service"]');
+  blogPage = document.querySelector('main > section[data-page="#blog"]');
 
   pageTargetMap = {
     "#home": homePage,
     "#resume": resumePage,
     "#service": servicePage,
+    "#blog": blogPage,
   };
 }
 
